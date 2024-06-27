@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 98.04%;
+    --foreground: 46 66% 4%;
+    --muted: 0 0% 94.9%;
+    --muted-foreground: 46 15% 31%;
+    --popover: 0 0% 99%;
+    --popover-foreground: 46 66% 3%;
+    --card: 0 0% 100%;
+    --card-foreground: 46 66% 3%;
+    --border: 0 0% 94.9%;
+    --input: 46 11% 95%;
+    --primary: 32.85 93.25% 53.53%;
+    --primary-foreground: 45.71 0% 100%;
+    --secondary: 46 17% 90%;
+    --secondary-foreground: 46 17% 30%;
+    --accent: 46 0% 92.31%;
+    --accent-foreground: 46 27% 23%;
+    --destructive: 4.53 78.82% 49.47%;
+    --destructive-foreground: 19 0% 100%;
+    --ring: 32.85 93.25% 53.53%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.92%;
+    --foreground: 240 5.88% 90%;
+    --muted: 240 5.26% 26.08%;
+    --muted-foreground: 240 3.83% 46.08%;
+    --popover: 240 3.7% 15.88%;
+    --popover-foreground: 240 5.88% 90%;
+    --card: 240 5.88% 10%;
+    --card-foreground: 240 5.88% 90%;
+    --border: 240 5.88% 10%;
+    --input: 240 3.7% 15.88%;
+    --primary: 20.54 90.24% 48.24%;
+    --primary-foreground: 46 0% 100%;
+    --secondary: 240 3.7% 15.88%;
+    --secondary-foreground: 240 5.88% 90%;
+    --accent: 240 5.26% 26.08%;
+    --accent-foreground: 240 5.88% 90%;
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 20.54 90.24% 48.24%;
+  }
+}
+
+
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .saturnbg {
+    background-image: url('./lib/assets/bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
